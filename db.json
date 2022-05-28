@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "name": "product A edited",
+      "price": 213132131,
+      "quantity": 5,
+      "img": "no copyright",
+      "status": true,
+      "id": 1
+    },
+    {
+      "name": "12313",
+      "price": 2131231231,
+      "quantity": 5,
+      "img": "no copyright",
+      "status": true,
+      "id": 2
+    },
+    {
+      "name": "product A",
+      "price": 1232132131,
+      "quantity": 5,
+      "img": "no copyright",
+      "status": true,
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<nz-table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Img</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products; let i = index" >
+            <td>{{ i + 1 }}</td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.quantity }}</td>
+            <td>{{ product.img }}</td>
+            <td>{{ product.status ? "Còn hàng" : "Hết hàng" }}</td>
+            <td>
+                <button nz-button nzType="primary">Edit</button>
+                <button nz-button nzType="default" nzDanger (click)="deleteProduct(product.id!)">Remove</button>
+            </td>
+        </tr>
+    </tbody>
+</nz-table>
