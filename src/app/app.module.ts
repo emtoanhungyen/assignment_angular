@@ -25,6 +25,9 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { SignupComponent } from './components/admin/users/signup/signup.component';
+import { LoginComponent } from './components/admin/users/login/login.component';
 registerLocaleData(en);
 
 @NgModule({
@@ -37,6 +40,8 @@ registerLocaleData(en);
     AddProductComponent,
     ListProductComponent,
     DetailProductComponent,
+    SignupComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +54,8 @@ registerLocaleData(en);
     NzLayoutModule,
     NzBreadCrumbModule,
     NzTableModule,
-    NzButtonModule
+    NzButtonModule,
+    NzFormModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

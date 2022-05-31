@@ -1,14 +1,6 @@
 {
   "products": [
     {
-      "name": "product A edited",
-      "price": 213132131,
-      "quantity": 5,
-      "img": "no copyright",
-      "status": true,
-      "id": 1
-    },
-    {
       "name": "12313",
       "price": 2131231231,
       "quantity": 5,
@@ -23,6 +15,20 @@
       "img": "no copyright",
       "status": true,
       "id": 3
+    }
+  ],
+  "users": [
+    {
+      "name": "userA",
+      "email": "nguoidung@gmail.com",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "name": "Phạm Quốc Toản",
+      "email": "dangnhap@gmail.com",
+      "password": "12345",
+      "id": 2
     }
   ]
 }
