@@ -9,26 +9,28 @@
       "id": 2
     },
     {
-      "name": "product A",
+      "name": "product A update mè",
       "price": 1232132131,
       "quantity": 5,
       "img": "no copyright",
       "status": true,
       "id": 3
+    },
+    {
+      "name": "Sản phẩm 1 demo",
+      "price": 100,
+      "quantity": 10,
+      "img": "NoCopyRight",
+      "status": true,
+      "id": 4
     }
   ],
   "users": [
     {
-      "name": "userA",
-      "email": "nguoidung@gmail.com",
+      "name": "Phạm Quốc Toản",
+      "email": "toanpqph14805@fpt.edu.vn",
       "password": "12345",
       "id": 1
-    },
-    {
-      "name": "Phạm Quốc Toản",
-      "email": "dangnhap@gmail.com",
-      "password": "12345",
-      "id": 2
     }
   ]
 }

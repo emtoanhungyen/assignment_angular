@@ -15,17 +15,17 @@ export class ProductService {
     private http: HttpClient
   ) { }
 
-  getProduct() {
-
+  getProduct(id: any): Observable<TypeProduct> {
+    return this.http.get<TypeProduct>(`${this.API}/${id}`)
   }
   listProduct(): Observable<TypeProduct[]> {
     return this.http.get<TypeProduct[]>(`${this.API}`);
   }
-  addProduct() {
-
+  addProduct(product: TypeProduct): Observable<TypeProduct> {
+    return this.http.post<TypeProduct>(`${this.API}`, product);
   }
-  updateProduct() {
-
+  updateProduct(product: TypeProduct) {
+    return this.http.put<TypeProduct>(`${this.API}/${product.id}`, product);
   }
   deleteProduct(id: number): Observable<TypeProduct> {
     return this.http.delete<TypeProduct>(`${this.API}/${id}`);

@@ -28,6 +28,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { SignupComponent } from './components/admin/users/signup/signup.component';
 import { LoginComponent } from './components/admin/users/login/login.component';
+import { HomeComponent } from './pages/view/home/home.component';
 registerLocaleData(en);
 
 @NgModule({
@@ -42,6 +43,7 @@ registerLocaleData(en);
     DetailProductComponent,
     SignupComponent,
     LoginComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
