@@ -26,11 +26,16 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzFormModule } from 'ng-zorro-antd/form';
-import { SignupComponent } from './components/admin/users/signup/signup.component';
-import { LoginComponent } from './components/admin/users/login/login.component';
 import { HomeComponent } from './pages/view/home/home.component';
 import { HeaderComponent } from './pages/view/header/header.component';
 import { FooterComponent } from './pages/view/footer/footer.component';
+import { MainComponent } from './pages/view/main/main.component';
+import { BlogComponent } from './components/view/blog/blog.component';
+import { WorksComponent } from './components/view/works/works.component';
+import { WorksDetailComponent } from './components/view/works-detail/works-detail.component';
+import { Page404Component } from './pages/page404/page404.component';
+import { SignupComponent } from './components/view/signup/signup.component';
+import { ToastrModule } from 'ngx-toastr';
 registerLocaleData(en);
 
 @NgModule({
@@ -43,11 +48,15 @@ registerLocaleData(en);
     AddProductComponent,
     ListProductComponent,
     DetailProductComponent,
-    SignupComponent,
-    LoginComponent,
     HomeComponent,
     HeaderComponent,
     FooterComponent,
+    MainComponent,
+    BlogComponent,
+    WorksComponent,
+    WorksDetailComponent,
+    Page404Component,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
@@ -61,7 +70,9 @@ registerLocaleData(en);
     NzBreadCrumbModule,
     NzTableModule,
     NzButtonModule,
-    NzFormModule
+    NzFormModule,
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

@@ -23,14 +23,6 @@
       "img": "NoCopyRight",
       "status": true,
       "id": 4
-    },
-    {
-      "name": "aaaa",
-      "price": 0,
-      "quantity": 0,
-      "img": "",
-      "status": true,
-      "id": 5
     }
   ],
   "users": [
