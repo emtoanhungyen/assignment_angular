@@ -1,0 +1,16 @@
+.footer {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 7%;
+    text-align: center;
+}
+.footer-copyright {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.footer-copyright p {
+    font-size: 14px;
+}
+.span {
+    margin-left: 3%;
+}

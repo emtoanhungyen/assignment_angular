@@ -29,6 +29,8 @@ import { NzFormModule } from 'ng-zorro-antd/form';
 import { SignupComponent } from './components/admin/users/signup/signup.component';
 import { LoginComponent } from './components/admin/users/login/login.component';
 import { HomeComponent } from './pages/view/home/home.component';
+import { HeaderComponent } from './pages/view/header/header.component';
+import { FooterComponent } from './pages/view/footer/footer.component';
 registerLocaleData(en);
 
 @NgModule({
@@ -44,6 +46,8 @@ registerLocaleData(en);
     SignupComponent,
     LoginComponent,
     HomeComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

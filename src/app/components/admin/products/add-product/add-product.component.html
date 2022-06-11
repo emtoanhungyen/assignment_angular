@@ -1,21 +1,33 @@
-<form (ngSubmit)="onAdd()" #formAdd="ngForm">
+<form #addForm="ngForm" (ngSubmit)="onAdd()">
     <h4>Signup</h4>
+
+    {{ addForm.value | json }}
     <div>
         <label for="">Name</label>
-        <input type="text" [(ngModel)]="product.name" name="name">
+        <input type="text" [(ngModel)]="product.name" name="name" #name="ngModel" required minlength="4">
     </div>
+    <!-- required -->
+    <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert">
+        <div *ngIf="name.errors?.['required']">
+            Name is required.
+        </div>
+        <div *ngIf="name.errors?.['minlength']">
+            Name must be at least 4 characters long.
+        </div>
+    </div>
+    <!-- --- -->
     <div>
         <label for="">Price</label>
-        <input type="number" [(ngModel)]="product.price" name="price">
+        <input type="number" [(ngModel)]="product.price" name="price" #price="ngModel">
     </div>
     <div>
         <label for="">Quantity</label>
-        <input type="number" [(ngModel)]="product.quantity" name="quantity">
+        <input type="number" [(ngModel)]="product.quantity" name="quantity" #quantity="ngModel">
     </div>
     <div>
         <label for="">Img</label>
-        <input type="text" [(ngModel)]="product.img" name="img">
+        <input type="text" [(ngModel)]="product.img" name="img" #img="ngModel">
     </div>
-    
-    <button>Submit</button>
+
+    <button [disabled]="!addForm.valid">Submit</button>
 </form>

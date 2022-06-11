@@ -1,0 +1,48 @@
+.container {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.navigation {
+    padding-top: 15px;
+}
+
+.navigation ul li {
+    display: inline-block;
+    line-height: 50%;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.navigation ul li a:hover {
+    color: rgb(245, 32, 103);
+}
+
+.button {
+    padding-top: 10px;
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+
+@media (max-width: 739px) {
+    .navigation {
+        display: none;
+    }
+
+    .button {
+        display: block;
+    }
+
+}
