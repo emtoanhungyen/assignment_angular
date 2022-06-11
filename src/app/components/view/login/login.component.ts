@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-
+import { IUser } from 'src/app/models/User';
+import { UserService } from 'src/app/services/user.service';
+import { ToastrService } from 'ngx-toastr';
+import { FormBuilder, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -7,9 +10,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  loginForm!: FormGroup;
 
-  ngOnInit(): void {
+  public users: IUser = {
+    email: "",
+    password: ""
   }
 
+  constructor(
+    private userService: UserService,
+    private toastr: ToastrService,
+    private formBuilder: FormBuilder
+  ) { }
+
+  ngOnInit(): void {
+    this.loginForm = this.formBuilder.group({
+      email: [''],
+      password: ['']
+    })
+  }
+
+  onLogin() {
+    
+  }
 }

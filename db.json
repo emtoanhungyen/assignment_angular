@@ -31,6 +31,20 @@
       "email": "toanpqph14805@fpt.edu.vn",
       "password": "12345",
       "id": 1
+    },
+    {
+      "name": "sp5 kem chống nắng",
+      "email": "dangnhap@gmail.com",
+      "password": "1234",
+      "role": 0,
+      "id": 2
+    },
+    {
+      "name": "Phạm Quốc Toản nè",
+      "email": "pholdph14747@fpt.edu.vn",
+      "password": "123",
+      "role": 0,
+      "id": 3
     }
   ]
 }
