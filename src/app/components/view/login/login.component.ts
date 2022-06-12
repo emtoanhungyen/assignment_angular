@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
 
   loginForm!: FormGroup;
 
-  public users: IUser = {
+  users: IUser = {
     email: "",
     password: ""
   }
@@ -31,6 +31,6 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin() {
-    
+
   }
 }

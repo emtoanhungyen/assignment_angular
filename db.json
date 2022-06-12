@@ -1,28 +1,28 @@
 {
   "products": [
     {
-      "name": "12313",
-      "price": 2131231231,
-      "quantity": 5,
-      "img": "no copyright",
+      "name": "Sản phẩm 1",
+      "price": 100,
+      "quantity": 99,
+      "img": "NoCopyRight",
+      "status": true,
+      "id": 1
+    },
+    {
+      "name": "Sản phẩm 2",
+      "price": 200,
+      "quantity": 69,
+      "img": "NoCopyRight",
       "status": true,
       "id": 2
     },
     {
-      "name": "product A update mè",
-      "price": 1232132131,
-      "quantity": 5,
-      "img": "no copyright",
-      "status": true,
-      "id": 3
-    },
-    {
-      "name": "Sản phẩm 1 demo",
-      "price": 100,
-      "quantity": 10,
+      "name": "Sản phẩm 3",
+      "price": 300,
+      "quantity": 50,
       "img": "NoCopyRight",
       "status": true,
-      "id": 4
+      "id": 3
     }
   ],
   "users": [
