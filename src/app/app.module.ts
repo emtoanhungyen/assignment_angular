@@ -36,6 +36,7 @@ import { WorksDetailComponent } from './components/view/works-detail/works-detai
 import { Page404Component } from './pages/page404/page404.component';
 import { SignupComponent } from './components/view/signup/signup.component';
 import { ToastrModule } from 'ngx-toastr';
+import { LoginComponent } from './components/view/login/login.component';
 registerLocaleData(en);
 
 @NgModule({
@@ -57,6 +58,7 @@ registerLocaleData(en);
     WorksDetailComponent,
     Page404Component,
     SignupComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

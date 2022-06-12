@@ -29,6 +29,7 @@ export class SignupComponent implements OnInit {
   onSignup() {
     this.userService.addUser(this.user).subscribe(data => {
       if (data) {
+        console.log(data);
         this.toastr.success("Đăng ký thành công!", "chào bạn");
         setTimeout(() => {
           this.router.navigateByUrl("/");

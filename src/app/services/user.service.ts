@@ -30,6 +30,6 @@ export class UserService {
     return this.http.delete<IUser>(`${this.API_URL}/${id}`);
   }
   getEmail(email: string): Observable<IUser>{
-    return this.http.get<IUser>(`http://localhost:300/user?email=${email}`)
+    return this.http.get<IUser>(`http://localhost:3000/users?email=${email}`)
   }
 }
