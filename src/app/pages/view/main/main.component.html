@@ -1,8 +1,12 @@
 <section>
     <div class="info px-8">
         <div class="info-left">
-            <div class="info-left-name">
+            <div *ngIf="user === null" class="info-left-name">
                 <h1>hi, i am john,</h1>
+                <h1>Creative Technologist</h1>
+            </div>
+            <div *ngIf="user !== null" class="info-left-name">
+                <h1>hi, {{user.name}},</h1>
                 <h1>Creative Technologist</h1>
             </div>
             <div class="info-left-text pt-2">

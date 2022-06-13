@@ -38,17 +38,22 @@ export class LoginComponent implements OnInit {
       } else {
         if (this.user[0].password !== this.login.password) {
           this.toastr.error("Mật khẩu không chính xác");
-        }
-        if (this.user[0].role === 0) {
+        } else {
           localStorage.setItem('user', JSON.stringify(this.user[0]));
           this.router.navigateByUrl("/");
           this.toastr.success("Đăng nhập thành công");
         }
-        if (this.user[0].role === 1) {
-          localStorage.setItem('admin', JSON.stringify(this.user[0]));
-          this.router.navigateByUrl("/");
-          this.toastr.success("Đăng nhập thành công");
-        }
+        // if (this.user[0].role === 0) {
+        //   localStorage.setItem('user', JSON.stringify(this.user[0]));
+        //   this.router.navigateByUrl("/");
+        //   this.toastr.success("Đăng nhập thành công");
+        // }
+        // if (this.user[0].role === 1) {
+        //   localStorage.setItem('admin', JSON.stringify(this.user[0]));
+        //   this.router.navigateByUrl("/");
+        //   this.toastr.success("Đăng nhập thành công");
+        // }
+        //}
       }
     })
   }

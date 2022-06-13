@@ -8,6 +8,7 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class MainComponent implements OnInit {
 
+  user: any;
   products!: TypeProduct[];
     
   constructor(
@@ -15,6 +16,8 @@ export class MainComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.user = localStorage.getItem('user');
+    this.user = JSON.parse(this.user);
     this.listProduct();
   }
 
