@@ -1,6 +1,7 @@
 import { ProductService } from './../../../../services/product.service';
 import { Component, OnInit } from '@angular/core';
 import { TypeProduct } from 'src/app/models/product';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-list-product',
@@ -12,7 +13,8 @@ export class ListProductComponent implements OnInit {
   products!: TypeProduct[];
 
   constructor(
-    private productService: ProductService
+    private productService: ProductService,
+    private toastr: ToastrService
   ) { }
 
   ngOnInit(): void {
@@ -30,6 +32,7 @@ export class ListProductComponent implements OnInit {
     if (confirm) {
       this.productService.deleteProduct(id).subscribe(() => {
         this.products = this.products.filter(item => item.id !== id);
+        this.toastr.success("Bạn đã xóa thành công!");
       })
     }
   }

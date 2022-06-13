@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddProductComponent } from './components/admin/products/add-product/add-product.component';
 import { ListProductComponent } from './components/admin/products/list-product/list-product.component';
+import { ListUserComponent } from './components/admin/users/list-user/list-user.component';
 import { BlogComponent } from './components/view/blog/blog.component';
 import { LoginComponent } from './components/view/login/login.component';
 import { SignupComponent } from './components/view/signup/signup.component';
@@ -28,7 +29,8 @@ const routes: Routes = [
     children: [
       { path: 'product', component: ListProductComponent },
       { path: 'product/add', component: AddProductComponent },
-      { path: 'product/edit/:id', component: AddProductComponent }
+      { path: 'product/edit/:id', component: AddProductComponent },
+      { path: 'user', component: ListUserComponent}
     ],
     canActivate: [AuthGuard]
   },
