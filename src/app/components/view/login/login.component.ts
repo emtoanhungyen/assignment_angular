@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { IUser } from 'src/app/models/User';
 import { UserService } from 'src/app/services/user.service';
 import { ToastrService } from 'ngx-toastr';
-import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
@@ -43,17 +42,6 @@ export class LoginComponent implements OnInit {
           this.router.navigateByUrl("/");
           this.toastr.success("Đăng nhập thành công");
         }
-        // if (this.user[0].role === 0) {
-        //   localStorage.setItem('user', JSON.stringify(this.user[0]));
-        //   this.router.navigateByUrl("/");
-        //   this.toastr.success("Đăng nhập thành công");
-        // }
-        // if (this.user[0].role === 1) {
-        //   localStorage.setItem('admin', JSON.stringify(this.user[0]));
-        //   this.router.navigateByUrl("/");
-        //   this.toastr.success("Đăng nhập thành công");
-        // }
-        //}
       }
     })
   }

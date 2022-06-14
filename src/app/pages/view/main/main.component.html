@@ -30,7 +30,7 @@
             <a href="">View all</a>
         </div>
         <div class="post-box">
-            <div class="box-content">
+            <div  class="box-content">
                 <h2>Making a design system from scratch</h2>
                 <div class="content-meta pt-2">
                     <span>12 Feb 2020</span>
@@ -58,16 +58,20 @@
     </div>
     <div class="featured-works px-8">
         <div class="featured-title">
-            <p>Featured works</p>
+            <p>Featured project</p>
         </div>
         <div *ngFor="let product of products; let i = index">
             <div class="featured-box">
                 <div class="box-left">
-                    <img src="https://res.cloudinary.com/dd0io3fh2/image/upload/v1654931770/Rectangle_30_qyhhbq.png"
-                        alt="">
+                    <a routerLink="/works/{{ product.id }}">
+                        <img src="https://res.cloudinary.com/dd0io3fh2/image/upload/v1654931770/Rectangle_30_qyhhbq.png"
+                            alt="">
+                    </a>
                 </div>
                 <div class="box-right">
-                    <h3>{{ product.name }}</h3>
+                    <a routerLink="/works/{{ product.id }}">
+                        <h3>{{ product.name }}</h3>
+                    </a>
                     <div class="year-dash">
                         <span class="box-year">
                             {{ product.price }}
@@ -76,50 +80,10 @@
                             {{ product.status ? "Còn hàng" : "Hết hàng" }}
                         </div>
                     </div>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <p>{{ product.desc }}</p>
                 </div>
             </div>
             <hr>
         </div>
-        <!-- <div class="featured-box">
-            <div class="box-left">
-                <img src="https://res.cloudinary.com/dd0io3fh2/image/upload/v1654931769/Rectangle_32_tgo5um.jpg" alt="">
-            </div>
-            <div class="box-right">
-                <h3>Vibrant Portraits of 2020</h3>
-                <div class="year-dash">
-
-                    <span class="box-year">
-                        2022
-                    </span>
-                    <div class="box-dashboard">
-                        Illustration
-                    </div>
-                </div>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
-        </div>
-        <hr>
-        <div class="featured-box">
-            <div class="box-left">
-                <img src="https://res.cloudinary.com/dd0io3fh2/image/upload/v1654931769/Rectangle_34_dfrfjj.jpg" alt="">
-            </div>
-            <div class="box-right">
-                <h3>36 Days of Malayalam type</h3>
-                <div class="year-dash">
-                    <span class="box-year">
-                        2022
-                    </span>
-                    <div class="box-dashboard">
-                        Typography
-                    </div>
-                </div>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
-        </div>
-        <hr> -->
     </div>
 </section>

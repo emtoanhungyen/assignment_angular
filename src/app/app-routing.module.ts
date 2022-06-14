@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddBlogComponent } from './components/admin/blogs/add-blog/add-blog.component';
+import { ListBlogComponent } from './components/admin/blogs/list-blog/list-blog.component';
 import { AddProductComponent } from './components/admin/products/add-product/add-product.component';
 import { ListProductComponent } from './components/admin/products/list-product/list-product.component';
 import { ListUserComponent } from './components/admin/users/list-user/list-user.component';
@@ -18,10 +20,10 @@ const routes: Routes = [
   {
     path: '', component: HomeComponent,
     children: [
-      {path: '', component: MainComponent},
+      { path: '', component: MainComponent },
       { path: 'blog', component: BlogComponent },
       { path: 'works', component: WorksComponent },
-      { path: 'works_detail', component: WorksDetailComponent }
+      { path: 'works/:id', component: WorksDetailComponent }
     ]
   },
   {
@@ -30,13 +32,15 @@ const routes: Routes = [
       { path: 'product', component: ListProductComponent },
       { path: 'product/add', component: AddProductComponent },
       { path: 'product/edit/:id', component: AddProductComponent },
-      { path: 'user', component: ListUserComponent}
+      { path: 'user', component: ListUserComponent },
+      { path: 'blog', component: ListBlogComponent },
+      { path: 'blog/add', component: AddBlogComponent }
     ],
     canActivate: [AuthGuard]
   },
   { path: 'signup', component: SignupComponent },
   { path: 'login', component: LoginComponent },
-  {path: '**', component: Page404Component}
+  { path: '**', component: Page404Component }
 ];
 
 @NgModule({

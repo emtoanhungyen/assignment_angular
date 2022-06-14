@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { TypeProduct } from 'src/app/models/product';
-
+import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-add-product',
   templateUrl: './add-product.component.html',
@@ -15,13 +15,15 @@ export class AddProductComponent implements OnInit {
     price: 0,
     quantity: 0,
     img: '',
-    status: true
+    status: true,
+    desc: ''
   }
 
   constructor(
     private productService: ProductService,
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute  ,
+    private toastr: ToastrService
   ) { }
 
   ngOnInit(): void {
@@ -38,12 +40,14 @@ export class AddProductComponent implements OnInit {
     const id = this.activatedRoute.snapshot.paramMap.get('id')!;
     if (id) {
       this.productService.updateProduct(this.product).subscribe(data => {
+        this.toastr.success("Update thành công.")
         this.router.navigateByUrl('/admin/product');
       })
     }
 
     this.productService.addProduct(this.product).subscribe(data => {
       this.product = data
+      this.toastr.success("Thêm thành công.");
       this.router.navigateByUrl('/admin/product');
     })
   }

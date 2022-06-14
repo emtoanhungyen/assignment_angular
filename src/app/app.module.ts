@@ -39,6 +39,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { LoginComponent } from './components/view/login/login.component';
 import { ListUserComponent } from './components/admin/users/list-user/list-user.component';
 import { AddUserComponent } from './components/admin/users/add-user/add-user.component';
+import { AddBlogComponent } from './components/admin/blogs/add-blog/add-blog.component';
+import { ListBlogComponent } from './components/admin/blogs/list-blog/list-blog.component';
 registerLocaleData(en);
 
 @NgModule({
@@ -63,6 +65,8 @@ registerLocaleData(en);
     LoginComponent,
     ListUserComponent,
     AddUserComponent,
+    AddBlogComponent,
+    ListBlogComponent,
   ],
   imports: [
     BrowserModule,

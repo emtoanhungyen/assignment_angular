@@ -4,5 +4,6 @@ export interface TypeProduct{
     price: number,
     quantity: number,
     img?: string,
-    status?: boolean
+    status?: boolean,
+    desc?: string
 }

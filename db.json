@@ -23,6 +23,24 @@
       "img": "NoCopyRight",
       "status": true,
       "id": 3
+    },
+    {
+      "name": "Sản phẩm 4",
+      "price": 400,
+      "quantity": 20,
+      "img": "NoCopyRight",
+      "status": true,
+      "desc": "Đây là phần mô tả sản phẩm nhé",
+      "id": 4
+    },
+    {
+      "name": "Sản phẩm 5",
+      "price": 230,
+      "quantity": 11,
+      "img": "NoCopyRight",
+      "status": true,
+      "desc": "Đây cũng là mô tả sản phẩm nha",
+      "id": 5
     }
   ],
   "users": [
@@ -32,6 +50,18 @@
       "password": "12345",
       "role": 1,
       "id": 1
+    }
+  ],
+  "blogs": [
+    {
+      "title": "Tiêu đề của Blog 1",
+      "desc": "Sản phẩm này không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh",
+      "id": 1
+    },
+    {
+      "title": "Tiêu đề của blog 2",
+      "desc": "Sản phẩm này cũng không phải là thuốc nnha\n",
+      "id": 2
     }
   ]
 }

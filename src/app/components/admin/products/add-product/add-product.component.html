@@ -48,6 +48,16 @@
         focus:invalid:border-pink-500 focus:invalid:ring-pink-500" type="text" [(ngModel)]="product.img" name="img"
             #img="ngModel">
     </div>
+    <div>
+        <label for="">Desc</label>
+        <textarea class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+        focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+        disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+        invalid:border-pink-500 invalid:text-pink-600
+        focus:invalid:border-pink-500 focus:invalid:ring-pink-500" name="desc" [(ngModel)]="product.desc"
+            #desc="ngModel" cols="30" rows="10"></textarea>
+    </div>
 
-    <button [disabled]="!addForm.valid">Submit</button>
+    <button class="px-4 py-2 mt-2 bg-blue-600 text-white rounded-lg hover:bg-sky-700"
+        [disabled]="!addForm.valid">Submit</button>
 </form>

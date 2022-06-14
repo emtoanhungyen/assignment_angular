@@ -31,8 +31,8 @@ export class ListProductComponent implements OnInit {
     const confirm = window.confirm("Bạn chắc chắn muốn xóa?");
     if (confirm) {
       this.productService.deleteProduct(id).subscribe(() => {
-        this.products = this.products.filter(item => item.id !== id);
         this.toastr.success("Bạn đã xóa thành công!");
+        this.products = this.products.filter(item => item.id !== id);
       })
     }
   }

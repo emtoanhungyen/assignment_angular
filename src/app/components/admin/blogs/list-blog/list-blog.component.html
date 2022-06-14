@@ -1,0 +1,23 @@
+<nz-table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Title</th>
+            <th>Desc</th>
+            <th>
+                <a routerLink="/admin/blog/add">add</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let blog of blogs; let i = index" >
+            <td>{{ i + 1 }}</td>
+            <td>{{ blog.title }}</td>
+            <td>{{ blog.desc }}</td>
+            <td>
+                <a nz-button nzType="primary" routerLink="/admin/blog/edit/{{blog.id}}">Edit</a>
+                <button nz-button nzType="default" nzDanger (click)="deleteBlog(blog.id!)">Remove</button>
+            </td>
+        </tr>
+    </tbody>
+</nz-table>

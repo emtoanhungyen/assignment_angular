@@ -60,7 +60,8 @@
         display: block;
     }
     .login {
-        display: block;
+        display: none;
     }
+    
 
 }
