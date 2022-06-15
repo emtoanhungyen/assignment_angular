@@ -7,6 +7,7 @@
             <th>Quantity</th>
             <th>Img</th>
             <th>Status</th>
+            <th>Desc</th>
             <th></th>
         </tr>
     </thead>
@@ -18,8 +19,9 @@
             <td>{{ product.quantity }}</td>
             <td>{{ product.img }}</td>
             <td>{{ product.status ? "Còn hàng" : "Hết hàng" }}</td>
+            <td>{{ product.desc }}</td>
             <td>
-                <a nz-button nzType="primary" routerLink="/admin/user/edit/{{product.id}}">Edit</a>
+                <a nz-button nzType="primary" routerLink="/admin/product/edit/{{product.id}}">Edit</a>
                 <button nz-button nzType="default" nzDanger (click)="deleteProduct(product.id!)">Remove</button>
             </td>
         </tr>

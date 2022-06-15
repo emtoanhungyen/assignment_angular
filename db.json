@@ -6,7 +6,8 @@
       "quantity": 99,
       "img": "NoCopyRight",
       "status": true,
-      "id": 1
+      "id": 1,
+      "desc": "Đây là mô tả sản phẩm nhé"
     },
     {
       "name": "Sản phẩm 2",
@@ -14,7 +15,8 @@
       "quantity": 69,
       "img": "NoCopyRight",
       "status": true,
-      "id": 2
+      "id": 2,
+      "desc": "Đây là mô tả sản phẩm nhé"
     },
     {
       "name": "Sản phẩm 3",
@@ -22,7 +24,8 @@
       "quantity": 50,
       "img": "NoCopyRight",
       "status": true,
-      "id": 3
+      "id": 3,
+      "desc": "Đây là mô tả sản phẩm nhé"
     },
     {
       "name": "Sản phẩm 4",

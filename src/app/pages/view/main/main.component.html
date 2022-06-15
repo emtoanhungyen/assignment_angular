@@ -30,30 +30,18 @@
             <a href="">View all</a>
         </div>
         <div class="post-box">
-            <div  class="box-content">
-                <h2>Making a design system from scratch</h2>
+            <div *ngFor="let blog of blogs" class="box-content">
+                <a routerLink="/blog">
+                    <h2>{{ blog.title}}</h2>
+                </a>
                 <div class="content-meta pt-2">
                     <span>12 Feb 2020</span>
                     <span class="s">|</span>
                     <a href="" class="ml-3"> Design, Pattern</a>
                 </div>
-                <p class="pt-2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet
-                    minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <p class="pt-2">{{ blog.desc }}</p>
             </div>
-            <div class="box-content w-full">
-                <h2>Creating pixel perfect icons in Figma</h2>
-                <div class="content-meta pt-2">
-                    <span>12 Feb 2020</span>
-                    <span class="s">|</span>
-                    <a href="" class="ml-3"> Design, Pattern</a>
-                </div>
-                <p class="pt-2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet
-                    minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
+
         </div>
     </div>
     <div class="featured-works px-8">
