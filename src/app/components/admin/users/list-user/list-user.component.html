@@ -15,7 +15,7 @@
             <td>{{ user.email }}</td>
             <td>{{ user.role }}</td>
             <td>
-                <a nz-button nzType="primary" routerLink="/admin/product/edit/{{user.id}}">Edit</a>
+                <a nz-button nzType="primary" routerLink="/admin/user/edit/{{user.id}}">Edit</a>
                 <button nz-button nzType="default" nzDanger (click)="deleteUser(user.id!)">Remove</button>
             </td>
         </tr>

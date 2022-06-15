@@ -35,15 +35,6 @@
       "status": true,
       "desc": "Đây là phần mô tả sản phẩm nhé",
       "id": 4
-    },
-    {
-      "name": "Sản phẩm 5",
-      "price": 230,
-      "quantity": 11,
-      "img": "NoCopyRight",
-      "status": true,
-      "desc": "Đây cũng là mô tả sản phẩm nha",
-      "id": 5
     }
   ],
   "users": [

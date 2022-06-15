@@ -20,10 +20,10 @@ export class HeaderComponent implements OnInit {
     this.user = JSON.parse(this.user);
   }
 
-  logout(){
+  logout() {
     localStorage.removeItem('user');
     this.toastr.success("Đăng xuất thành công");
-    return this.router.navigateByUrl("/");
+    this.router.navigateByUrl("/");
     // window.location.reload();
   }
 
