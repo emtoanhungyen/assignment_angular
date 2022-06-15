@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { TypeProduct } from 'src/app/models/product';
 import { ProductService } from 'src/app/services/product.service';
 import { ActivatedRoute } from '@angular/router';
+import { TypeProduct } from 'src/app/models/product';
 @Component({
   selector: 'app-works-detail',
   templateUrl: './works-detail.component.html',

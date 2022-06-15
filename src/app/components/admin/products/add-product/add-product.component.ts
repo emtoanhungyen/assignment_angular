@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
 import { Router, ActivatedRoute } from '@angular/router';
-import { TypeProduct } from 'src/app/models/product';
 import { ToastrService } from 'ngx-toastr';
+import { TypeProduct } from 'src/app/models/product';
 @Component({
   selector: 'app-add-product',
   templateUrl: './add-product.component.html',

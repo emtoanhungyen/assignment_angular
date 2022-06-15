@@ -1,8 +1,8 @@
 import { TypeBlog } from './../../../models/Blog';
 import { Component, OnInit } from '@angular/core';
-import { TypeProduct } from 'src/app/models/product';
 import { ProductService } from 'src/app/services/product.service';
 import { BlogService } from 'src/app/services/blog.service';
+import { TypeProduct } from 'src/app/models/product';
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
