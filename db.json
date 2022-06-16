@@ -44,6 +44,20 @@
       "password": "12345",
       "role": 1,
       "id": 1
+    },
+    {
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "12345",
+      "role": 0,
+      "id": 2
+    },
+    {
+      "name": "theanh",
+      "email": "theanh@gmail.com",
+      "password": "12345",
+      "role": 0,
+      "id": 3
     }
   ],
   "blogs": [

@@ -34,9 +34,10 @@ export class SignupComponent implements OnInit {
         setTimeout(() => {
           this.router.navigateByUrl("/");
         }, 1000)
+      } else {
+        this.toastr.error("Đăng ký thất bại!");
+        this.router.navigateByUrl("/signup");
       }
-      this.toastr.error("Đăng ký thất bại!");
-      this.router.navigateByUrl("/signup");
     })
 
   }

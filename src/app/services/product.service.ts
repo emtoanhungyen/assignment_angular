@@ -9,8 +9,8 @@ import { TypeProduct } from '../models/Products';
 })
 export class ProductService {
 
-  API: string = `http://localhost:3000/products`;
-
+  // API: string = `http://localhost:3000/products`;
+  API: string = `https://6210ab9f4cd3049e1781d501.mockapi.io/products`;
   constructor(
     private http: HttpClient
   ) { }

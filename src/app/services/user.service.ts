@@ -8,7 +8,8 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
 
-  API_URL: string = `http://localhost:3000/users`;
+  // API_URL: string = `http://localhost:3000/users`;
+  API_URL: string = `https://6210ab9f4cd3049e1781d501.mockapi.io/users`;
 
   constructor(
     private http: HttpClient

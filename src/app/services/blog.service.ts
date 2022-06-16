@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class BlogService {
 
-  API: string = `http://localhost:3000/blogs`;
+  // API: string = `http://localhost:3000/blogs`;
+  API: string = `https://6210ab9f4cd3049e1781d501.mockapi.io/blog`;
 
   constructor(
     private http: HttpClient
